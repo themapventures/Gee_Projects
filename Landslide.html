@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Earth Engine App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            position: relative;
+            z-index: 1000;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Overlay to hide Earth Engine branding */
+        .overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 210px; /* Adjust based on branding size */
+            height: 40px; /* Adjust based on branding size */
+            background-color: white; /* Match page background */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Factors Affecting Landslide (Made with ❤️ by The Map Ventures)</div>
+    <div class="container">
+        <iframe src="https://ee-hassan03121998.projects.earthengine.app/view/landslide"></iframe>
+        <div class="overlay"></div> <!-- Overlay to hide branding -->
+    </div>
+
+</body>
+</html>
